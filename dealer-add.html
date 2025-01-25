@@ -391,8 +391,8 @@
                   <i class="fa fa-newspaper-o text-white" aria-hidden="true"></i>
                   <span class="lan-5">Design</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="#"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Design</a></li>
-                    <li><a href="#"><i class="fa fa-list text-white" aria-hidden="true"></i> Design List</a></li>
+                    <li><a href="design-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Design</a></li>
+                    <li><a href="design-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design List</a></li>
                   </ul>
                 </li>
                 
@@ -400,32 +400,26 @@
                   <i class="fa fa-briefcase text-white" aria-hidden="true"></i>
                   <span class="lan-7">Mock Up</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="#"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
-                    <li><a href="#"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
+                    <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
+                    <li><a href="mock-up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
                   </ul>
                 </li>
 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                    <i class="fa fa-users text-white" aria-hidden="true"></i>
-                    <span class="lan-8">Dealer</span></a>
-                  <ul class="sidebar-submenu">
-                    <li><a href="dealer-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Dealer</a></li>
-                    <li><a href="dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Dealer List</a></li>
-                  </ul>
-                </li>
+                  <i class="fa fa-users text-white" aria-hidden="true"></i>
+                  <span class="lan-8">Dealer</span></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="dealer-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Dealer</a></li>
+                  <li><a href="dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Dealer List</a></li>
+<li><a href="update-by-dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design by Dealer List</a></li>
+                </ul>
+              </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="inquiry-list.html">
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
                   <span class="lan-2">Inquiry</span></a>
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-users text-white" aria-hidden="true"></i>
-                  <span class="lan-10">Team</span></a>
-                  <ul class="sidebar-submenu">
-                    <li><a href="#"><i class="fa fa-list text-white" aria-hidden="true"></i>  Team List</a></li>
-                    <!-- <li><a href="team-member-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Team List</a></li> -->
-                  </ul>
-                </li>
+              
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
           </nav>
@@ -463,6 +457,7 @@
                             <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
                               <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
                                 <form class="row g-3 needs-validation" novalidate="">
+                                 
                                   <div class="col-sm-6">
                                     <label class="form-label" for="customDealerCode"> Dealer Code<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customDealerCode" type="text" placeholder="Dealer Code" required="">
@@ -475,18 +470,18 @@
                                   </div>
                                   <div class="col-12"> 
                                     <label class="form-label" for="exampleFormControlTextarea1">Address </label>
-                                    <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Address">
+                                    <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                   </div>
                                   <div class="col-sm-6">
-                                    <label class="form-label" for="customState-wizard">City</label>
+                                    <label class="form-label" for="customState-wizard">district </label>
                                     <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select City</option>
-                                      <option>Africa </option>
-                                      <option>India</option>
-                                      <option>Indonesia </option>
-                                      <option>Netherlands</option>
-                                      <option>U.K </option>
-                                      <option>U.S</option>
+                                      <option selected="" disabled="" value="">Select district </option>
+                                      <option>Jamnager </option>
+                                      <option>Rajkot</option>
+                                      <option>Morbi </option>
+                                      <option>Ahmedabad</option>
+                                      <option>Surat </option>
+                                      <option>Junagadh</option>
                                     </select>
                                     <div class="invalid-feedback">Please select a valid state.</div>
                                   </div>
@@ -494,37 +489,19 @@
                                     <label class="form-label" for="customState-wizard">State</label>
                                     <select class="form-select" id="customState-wizard" required="">
                                       <option selected="" disabled="" value="">Select State</option>
-                                      <option>Africa </option>
-                                      <option>India</option>
-                                      <option>Indonesia </option>
-                                      <option>Netherlands</option>
-                                      <option>U.K </option>
-                                      <option>U.S</option>
+                                      <option>Gujrat </option>
+                                      <option>Rajsthan</option>
+                                      <option>Goa </option>
+                                     
                                     </select>
                                     <div class="invalid-feedback">Please select a valid state.</div>
                                   </div>
-                                  
+                                  <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
+                                    <h4>Pin Codes</h4>
                                   <div class="container-fluid">
-                                    <div class="page-title">
-                                      <div class="row">
-                                        <div class="col-6">
-                                          <h4>Pin Codes</h4>
-                                        </div>
-                                      </div>
-                                      <div class="row mt-4">
-                                        <div class="col-sm-6">
-                                          <label class="form-label" for="customState-wizard">City</label>
-                                          <select class="form-select" id="customState-wizard" required="">
-                                            <option selected="" disabled="" value="">Select City</option>
-                                            <option>Africa </option>
-                                            <option>India</option>
-                                            <option>Indonesia </option>
-                                            <option>Netherlands</option>
-                                            <option>U.K </option>
-                                            <option>U.S</option>
-                                          </select>
-                                          <div class="invalid-feedback">Please select a valid state.</div>
-                                        </div>
+                                   
+                                      <div class="row mt-3">
+                                      
                                         <div class="col-sm-6">
                                           <label class="form-label" for="customState-wizard">Primary Pin</label>
                                           <select class="form-select" id="customState-wizard" required="">
@@ -553,7 +530,8 @@
                                           <div class="invalid-feedback">Please select a valid state.</div>
                                         </div>
                                       </div>
-                                    </div>
+                                   
+                                  </div>
                                   </div>
                                   <div class="col-12"> 
                                     <label class="form-label" for="exampleFormControlTextarea1">Remarks </label>
@@ -780,7 +758,6 @@
               <!-- Zero Configuration  Ends-->
             </div>
           </div>
-          
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
