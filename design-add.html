@@ -9,7 +9,7 @@
 <meta name="author" content="pixelstrap">
 <link rel="icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
 <link rel="shortcut icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
-<title>Unique IT Solution</title>
+<title>Wholesaler</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -570,11 +570,26 @@
                                     </div>
                                   </div>
                                 </div>
+                                <style>
+                                  .ck-blurred{
+                                    height : 200px;
+                                  }
+                                </style>
+                                <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
                                 <div class="col-12">
-                                  <label class="form-label" for="customLongDescription"> Long Description<span class="txt-danger">*</span></label>
-                                  <textarea class="form-control" id="customLongDescription" type="text" placeholder="Long Description" required=""></textarea>
-                                  <div class="valid-feedback">Looks good!</div>
+                                  <label class="form-label" for="editor">Long Description</label>
+                                  <div id="editor">
+                                   <!-- Set height to 200px -->
                                 </div>
+                                
+                                <script>
+                                  // Initialize CKEditor
+                                  ClassicEditor
+                                    .create(document.querySelector('#editor'))
+                                    .catch(error => {
+                                      console.error(error);
+                                    });
+                                </script>
                                 <div class="col-12">
 
                                
@@ -630,6 +645,7 @@
           
           <!-- Container-fluid Ends-->
         </div>
+      </div>
         <!-- footer start-->
         <footer class="footer">
           <div class="container-fluid">
@@ -641,7 +657,7 @@
           </div>
         </footer>
       </div>
-    </div>
+  
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->

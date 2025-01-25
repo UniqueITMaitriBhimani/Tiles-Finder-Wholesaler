@@ -9,7 +9,7 @@
 <meta name="author" content="pixelstrap">
 <link rel="icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
 <link rel="shortcut icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
-<title>Unique IT Solution</title>
+<title>Wholesaler</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -249,11 +249,26 @@
                                     <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
                                     <div class="invalid-feedback">Invalid form file selected</div>
                                   </div>
+                                  <style>
+                                    .ck-blurred{
+                                      height : 200px;
+                                    }
+                                  </style>
+                                  <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
                                   <div class="col-12">
-                                    <label class="form-label" for="customLongDescription"> Long Description<span class="txt-danger">*</span></label>
-                                    <textarea class="form-control" id="customLongDescription" type="text" placeholder="Long Description" required=""></textarea>
-                                    <div class="valid-feedback">Looks good!</div>
+                                    <label class="form-label" for="editor">Long Description</label>
+                                    <div id="editor">
+                                     <!-- Set height to 200px -->
                                   </div>
+                                  
+                                  <script>
+                                    // Initialize CKEditor
+                                    ClassicEditor
+                                      .create(document.querySelector('#editor'))
+                                      .catch(error => {
+                                        console.error(error);
+                                      });
+                                  </script>
                                   <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
                                     <!-- Header Section -->
                                    
@@ -263,8 +278,11 @@
                                     <div class="row mt-3">
                                       <div class="col-sm-5"> 
                                         <label class="form-label" for="formFile1">Design Image</label>
-                                        <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
-                                        <div class="invalid-feedback">Invalid form file selected</div>
+                                        <select class="form-select" id="manufacturer" required="">
+                                          <option selected="" disabled="" value="">Select Design</option>
+                                          <option value="Simpolo">Snow White</option>
+                                          <option value="Kajariya">Black PLain</option>
+                                        </select>
                                       </div>
                                       <div class="col-sm-5">
                                         <label class="form-label" for="customSequence">Sequence<span class="txt-danger">*</span></label>
@@ -295,7 +313,7 @@
                                                     <thead>
                                                       <tr class="bg-light text-dark">
                                                         <th class="text-center">No.</th>
-                                                        <th class="text-center">Image</th>
+                                                        <th class="text-center">Design Name</th>
                                                         <th class="text-center">Sequence</th> 
                                                         <th class="text-center">Action</th>
                                                       </tr>
@@ -303,8 +321,7 @@
                                                     <tbody>
                                                       <tr>
                                                         <td class="text-center table-data">1</td>
-                                                        <td class="text-center table-data">
-                                                          <img src="./assets/images/demo img.avif" width="70px" height="70px" alt="">
+                                                        <td class="text-center table-data"> Snow White
                                                         </td>
                                                         <td class="text-center table-data">6</td>
                                                         <td class="d-flex justify-content-center"> 
@@ -324,8 +341,7 @@
                                                       </tr>
                                                       <tr>
                                                         <td class="text-center table-data">2</td>
-                                                        <td class="text-center table-data">
-                                                          <img src="./assets/images/demo 2.jpg" width="70px" height="70px" alt="">
+                                                        <td class="text-center table-data">Black Plain
                                                         </td>
                                                         <td class="text-center table-data">6</td>
                                                         <td class="d-flex justify-content-center"> 
@@ -406,6 +422,7 @@
           
           <!-- Container-fluid Ends-->
         </div>
+      </div>
         <!-- footer start-->
         <footer class="footer">
           <div class="container-fluid">
@@ -417,7 +434,7 @@
           </div>
         </footer>
       </div>
-    </div>
+   
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
