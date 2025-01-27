@@ -402,7 +402,7 @@
                   <ul class="sidebar-submenu">
                     <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
                     <li><a href="mock-up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
-                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>  </ul>
+                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>   </ul>
                 </li>
 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -431,135 +431,191 @@
         </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-          <div class="container-fluid">
-            <div class="page-title">
-              <div class="row">
-                <div class="col-6">
-                  <h4>Inquiry List</h4>
-                </div>
-                <div class="col-6">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       
-                        <svg class="stroke-icon">
-                          <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                        </svg></a></li>
-                    <li class="breadcrumb-item active">Inquiry List</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
+         
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row">
-                <!-- Filter Button Start -->
-                <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3">
-                  <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="tooltip" title="btn btn-success btn-lg" id="filter-button">
-                    <div class="icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="filter" >
-                        <polygon fill="none" stroke="white" stroke-miterlimit="10" stroke-width="4" points="2 6 2 10 26 34 26 58 38 58 38 34 62 10 62 6 2 6"></polygon>
-                      </svg>
-                    </div>
-                    <div class="text-white" id="text"><span>Filter</span></div>
-                  </button>
+            <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
+              <div class="card-body">
+            <div class="row mb-2">
+              <div class="page-title" style="padding: 20px 46px;">
+                <div class="row">
+                  <div class="col-6">
+                    <h4>Select Mock Up</h4>
+                  </div>
                 </div>
-                 <!-- Filter Button End -->
               </div>
-              <div class="row mb-2" id="filter-form">
-                <!-- Filter Form Start -->
-                <div class="col-sm-12">
-                  <div class="card height-equal">
-                    <div class="card-body basic-wizard important-validation">
-                      <div id="msform p-3">
-                        <form class="stepper-one row needs-validation custom-input" novalidate="">
-                          <div class="col-lg-4 col-md-12 col-sm-12">
-                            <label class="form-label" for="number">Design Name</label>
-                            <input class="form-control digits w-100" type="number" placeholder="Enter your Design Name" id="number">
-                          </div>  
-                          <div class="col-lg-4 col-md-12 col-sm-12">
-                            <label class="form-label" for="number">Size</label>
-                            <input class="form-control digits w-100" type="number" placeholder="Enter your Size" id="number">
-                          </div>    
-                          <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
-                            <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
-                            <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
-                          </div>
-                        </form>
+              <!-- Daily Entry Table Start -->
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-block row">
+                    <div class="col-sm-12 col-lg-12 col-xl-12">
+                      <div class="table-responsive">
+                        <table class="table table-dashed">
+                          <thead>
+                            <tr class="bg-light">
+                              <th scope="col" class="text-center">Image</th>
+                              <th scope="col" class="text-center">Mock Up Name</th>
+                              <th scope="col" class="text-center">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row" class="text-center table-data"><img src="./assets/images/demo 2.jpg" width="50px" height="50px" alt=""></th>
+                              <td class="text-center table-data">Spencera</td>
+                              <td class="text-center col-fix table-data"> 
+                                <ul class="action d-flex justify-content-center"> 
+                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                          
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="row justify-content-between gx-0 mx-2">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <label class="mt-2">Select 
+                          <select id="rows" name="rows" class="p-2 border mx-2">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                          </select>
+                          Entries </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12  d-flex justify-content-end" id="paginatgion">
+                          <nav aria-label="Page navigation example" class="mt-2">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true" class="text-dark">&laquo;</span>
+                                  <span class="sr-only">Previous</span>
+                                </a>  
+                              </li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true" class="text-dark">&raquo;</span>
+                                  <span class="sr-only" >Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Filter Form end -->
               </div>
-            <div class="row">
-              <!-- Zero Configuration  Starts-->
+              <!-- Daily Entry Table Start -->
+          </div>
+        </div>
+        </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
+              <div class="card-body">
+            <div class="row mb-3">
+              <div class="page-title" style="padding: 20px 46px;">
+                <div class="row">
+                  <div class="col-12 col-md-10">
+                    <h4>New Mock Up</h4>
+                  </div>
+                  <div class="col-12 col-md-2 d-flex justify-content-md-end align-items-center">
+                    <button class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- Daily Entry Table Start -->
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="display" id="basic-1">
-                        <thead>
-                          <tr>
-                            <th class="text-center">No.</th>
-                            <th class="text-center">PinCode</th>
-                            <th class="text-center">Dealer Code</th>
-                            <th class="text-center">Design Name</th>
-                            <th class="text-center">Number</th>
-                            <th class="text-center">Size</th>
-                            <th class="text-center">Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center table-data">1</td>
-                            <td class="text-center table-data">326 325</td>
-                            <td class="text-center table-data">9635 9635</td>
-                            <td class="text-center table-data">Snow White</td>
-                            <td class="text-center table-data">9639639639</td>
-                            <td class="text-center table-data"> 100 Sq. feet</td>
-                            <td class="d-flex justify-content-center"> 
-                              <ul class="action"> 
-                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-center table-data">2</td>
-                            <td class="text-center table-data">326 325</td>
-                            <td class="text-center table-data">9635 9635</td>
-                            <td class="text-center table-data">Black Plain</td>
-                            <td class="text-center table-data">9639639639</td>
-                            <td class="text-center table-data">1200 Sq. feet</td>
-                            <td class="d-flex justify-content-center"> 
-                              <ul class="action"> 
-                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                        
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div class="card-block row">
+                    <div class="col-sm-12 col-lg-12 col-xl-12">
+                      <div class="table-responsive">
+                        <table class="table table-dashed">
+                          <thead>
+                            <tr class="bg-light">
+                              <th scope="col" class="text-center"><input class="form-check-input border-info" id="flexCheckDefault" type="checkbox" value=""></th>
+                              <th scope="col" class="text-center">Image</th>
+                              <th scope="col" class="text-center">Mock Up Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center table-data"><input class="form-check-input border-info" id="flexCheckDefault" type="checkbox" value=""></td>
+                              <th scope="row" class="text-center table-data"><img src="./assets/images/demo 2.jpg" width="50px" height="50px" alt=""></th>
+                              <td class="text-center col-fix table-data">xys</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center table-data"><input class="form-check-input border-info" id="flexCheckDefault" type="checkbox" value=""></td>
+                              <th scope="row" class="text-center table-data"><img src="./assets/images/demo 2.jpg" width="50px" height="50px" alt=""></th>
+                              <td class="text-center col-fix table-data">xys</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="row justify-content-between gx-0 mx-2">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <label class="mt-2">Select 
+                          <select id="rows" name="rows" class="p-2 border mx-2">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                          </select>
+                          Entries </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12  d-flex justify-content-end" id="paginatgion">
+                          <nav aria-label="Page navigation example" class="mt-2">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true" class="text-dark">&laquo;</span>
+                                  <span class="sr-only">Previous</span>
+                                </a>  
+                              </li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true" class="text-dark">&raquo;</span>
+                                  <span class="sr-only" >Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Zero Configuration  Ends-->
-            </div>
+              <!-- Daily Entry Table Start -->
           </div>
-          <!-- Container-fluid Ends-->
         </div>
+        </div>
+          </div>
+          
+          
+          
+          
+      </div>
         <!-- footer start-->
         <footer class="footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12 footer-copyright text-center">
-                <p class="mb-0">Copyright 2024 © Riho theme by pixelstrap  </p>
+                <p class="mb-0">Powered By <a href="https://theuniqueitsolution.com/" class="text-primary">Unique IT Solution</a></p>
               </div>
             </div>
           </div>
         </footer>
-      </div>
+      
     </div>
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
