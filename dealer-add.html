@@ -358,7 +358,7 @@
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-layout="stroke-svg">
-          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
+          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid w-75" src="/assets/images/logo/logo-unique_it.webp" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
           </div>
@@ -367,7 +367,7 @@
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
               <ul class="sidebar-links" id="simple-bar">
-                <li class="back-btn"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a>
+                <li class="back-btn"><a href="index.html"><img class="img-fluid" src="/assets/images/logo/logo-icon.png" alt=""></a>
                   <div class="mobile-back text-end"> <span>Back </span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                 </li>
                 <li class="pin-title sidebar-main-title">
@@ -402,7 +402,9 @@
                   <ul class="sidebar-submenu">
                     <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
                     <li><a href="mock-up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
-                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>  </ul>
+                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>
+                 
+                  </ul>
                 </li>
 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -414,6 +416,17 @@
 <li><a href="update-by-dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design by Dealer List</a></li>
                 </ul>
               </li>
+              <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                <span class="lan-10">Blog</span></a>
+              <ul class="sidebar-submenu">
+                <li><a href="add-blog.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add
+                    Blog</a></li>
+                <li><a href="blog-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Blog List</a>
+                </li>
+                <!-- <li><a href="team-member-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Team List</a></li> -->
+              </ul>
+            </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="inquiry-list.html">
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
@@ -424,6 +437,7 @@
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
                   <span class="lan-2">Stock</span></a>
                 </li>
+                
               
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
@@ -458,302 +472,138 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row shopping-wizard">
-                      <div class="col-12"> 
-                            <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
-                              <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
-                                <form class="row g-3 needs-validation" novalidate="">
-                                 
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customDealerCode"> Dealer Code<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="customDealerCode" type="text" placeholder="Dealer Code" required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customUserName">UserName / Email<span class="txt-danger">*</span></label>
-                                    <input class="form-control" id="customUserName" type="UserName" placeholder=" UserName / Email" required="">
-                                    <div class="valid-feedback">Looks good!</div>
-                                  </div>
-                                  <div class="col-12"> 
-                                    <label class="form-label" for="exampleFormControlTextarea1">Address </label>
-                                    <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customState-wizard">district </label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select district </option>
-                                      <option>Jamnager </option>
-                                      <option>Rajkot</option>
-                                      <option>Morbi </option>
-                                      <option>Ahmedabad</option>
-                                      <option>Surat </option>
-                                      <option>Junagadh</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid state.</div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <label class="form-label" for="customState-wizard">State</label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select State</option>
-                                      <option>Gujrat </option>
-                                      <option>Rajsthan</option>
-                                      <option>Goa </option>
+                      <div class="col-12">
+                        <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
+                          <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel"
+                            aria-labelledby="bill-wizard-tab">
+                            <form class="row g-3 needs-validation" novalidate="">
+                            
+                              <div class="col-sm-12">
+                                <label class="form-label" for="customDealerCode"> Dealer Code<span
+                                    class="txt-danger">*</span></label>
+                                <input class="form-control" id="customDealerCode" type="text" placeholder="Dealer Code"
+                                  required="">
+                                <div class="valid-feedback">Looks good!</div>
+                              </div>
+                              <div class="col-sm-6">
+                                <label class="form-label" for="customUserName">UserName / Email<span
+                                    class="txt-danger">*</span></label>
+                                <input class="form-control" id="customUserName" type="UserName"
+                                  placeholder=" UserName / Email" required="">
+                                <div class="valid-feedback">Looks good!</div>
+                              </div>
+                              <div class="col-sm-6">
+                                <label class="form-label" for="customUserName">Password<span
+                                    class="txt-danger">*</span></label>
+                                <input class="form-control" id="customUserName" type="UserName"
+                                  placeholder="Password" required="">
+                                <div class="valid-feedback">Looks good!</div>
+                              </div>
+                              <div class="col-12">
+                                <label class="form-label" for="exampleFormControlTextarea1">Address </label>
+                                      <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <label class="form-label" for="customState-wizard">district </label>
+                                      <select class="form-select" id="customState-wizard" required="">
+                                        <option selected="" disabled="" value="">Select district </option>
+                                        <option>Jamnager </option>
+                                        <option>Rajkot</option>
+                                        <option>Morbi </option>
+                                        <option>Ahmedabad</option>
+                                        <option>Surat </option>
+                                        <option>Junagadh</option>
+                                      </select>
+                                      <div class="invalid-feedback">Please select a valid state.</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <label class="form-label" for="customState-wizard">State</label>
+                                      <select class="form-select" id="customState-wizard" required="">
+                                        <option selected="" disabled="" value="">Select State</option>
+                                        <option>Gujrat </option>
+                                        <option>Rajsthan</option>
+                                        <option>Goa </option>
+                                       
+                                      </select>
+                                      <div class="invalid-feedback">Please select a valid state.</div>
+                                    </div>
+                                    <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
+                                      <h4>Pin Codes</h4>
+                                    <div class="container-fluid">
                                      
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid state.</div>
-                                  </div>
-                                  <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
-                                    <h4>Pin Codes</h4>
-                                  <div class="container-fluid">
-                                   
-                                      <div class="row mt-3">
-                                      
-                                        <div class="col-sm-6">
-                                          <label class="form-label" for="customState-wizard">Primary Pin</label>
-                                          <select class="form-select" id="customState-wizard" required="">
-                                            <option selected="" disabled="" value="">Select Primary Pin</option>
-                                            <option>352689 </option>
-                                            <option>85967</option>
-                                            <option>558888 </option>
-                                            <option>963852</option>
-                                            <option>741852 </option>
-                                            <option>789654</option>
-                                          </select>
-                                          <div class="invalid-feedback">Please select a valid state.</div>
-                                        </div>
-                                        <!-- padding add dropdown in check box -->
-                                        <div class="col-sm-6">
-                                          <label class="form-label" for="customState-wizard">Secondary PinCode</label>
-                                          <select class="form-select" id="customState-wizard" required="">
-                                            <option selected="" disabled="" value="">Select Secondary PinCode</option>
-                                            <option>352689 </option>
-                                            <option>85967</option>
-                                            <option>558888 </option>
-                                            <option>963852</option>
-                                            <option>741852 </option>
-                                            <option>789654</option>
-                                          </select>
-                                          <div class="invalid-feedback">Please select a valid state.</div>
-                                        </div>
-                                      </div>
-                                   
-                                  </div>
-                                  </div>
-                                  <div class="col-12"> 
-                                    <label class="form-label" for="exampleFormControlTextarea1">Remarks </label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                  </div>
-                                  <div class="col-12 text-center">
-                                    <button class="btn btn-primary" type="submit">Save</button>
-                                    <button class="btn btn-dark" type="reset">Cancel</button>
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="tab-pane fade shipping-wizard" id="ship-wizard" role="tabpanel" aria-labelledby="ship-wizard-tab">
-                                <h6>Shipping Information</h6>
-                                <p class="f-light">Fill up the following information to send you the order</p>
-                                <div class="shipping-title">
-                                  <h6 class="mb-2">Saved Address</h6>
-                                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"> <i class="fa fa-plus-square f-20"></i></button>
-                                  <div class="modal fade" id="exampleModalgetbootstrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalgetbootstrap" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5>Information</h5>
-                                          <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                          <form class="row g-3 needs-validation" novalidate="">
-                                            <div class="col-12">
-                                              <label class="form-label" for="validationCustom01">Name</label>
-                                              <input class="form-control" id="validationCustom01" type="text" placeholder="Enter your name" required="">
-                                              <div class="valid-feedback">Looks good!</div>
-                                            </div>
-                                            <div class="col-12">
-                                              <label class="form-label" for="validationAddress-a">Address</label>
-                                              <textarea class="form-control" id="validationAddress-a" rows="3" placeholder="Enter your address..."></textarea>
-                                              <div class="valid-feedback">Looks good!</div>
-                                            </div>
-                                            <div class="col-12"> 
-                                              <label class="form-label w-100" for="addressType-a">Address Type
-                                                <select class="form-select" id="addressType-a" required="">
-                                                  <option selected="" value="">Home</option>
-                                                  <option>Office</option>
-                                                </select>
-                                              </label>
-                                            </div>
-                                            <div class="col-12">
-                                              <label for="contact">Contact No</label>
-                                              <input class="form-control" id="contact" type="number" placeholder="123456789">
-                                            </div>
-                                          </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button class="btn m-0" type="button" data-bs-dismiss="modal">Close</button>
-                                          <button class="btn btn-primary m-0" type="button">Save</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row g-3">
-                                  <div class="col-xxl-4 col-sm-6"> 
-                                    <div class="card-wrapper border rounded-3 h-100 light-card">
-                                      <div class="collect-address">
-                                        <div class="d-flex gap-2 align-items-center">
-                                          <div class="form-check radio radio-primary">
-                                            <input class="form-check-input" id="shipping-choose1" type="radio" name="radio1" value="option1" checked="">
-                                            <label class="form-check-label mb-0" for="shipping-choose1">Home</label>
+                                        <div class="row mt-3">
+                                        
+                                          <div class="col-sm-6">
+                                            <label class="form-label" for="customState-wizard">Primary Pin</label>
+                                            <select class="form-select" id="customState-wizard" required="">
+                                              <option selected="" disabled="" value="">Select Primary Pin</option>
+                                              <option>352689 </option>
+                                              <option>85967</option>
+                                              <option>558888 </option>
+                                              <option>963852</option>
+                                              <option>741852 </option>
+                                              <option>789654</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select a valid state.</div>
                                           </div>
+                                          <!-- padding add dropdown in check box -->
+                                          <div class="col-sm-6">
+                                      <button
+                                        disabled
+                                        class="btn col-12 border dropdown-toggle adminInfoInput"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                      >
+                                        Select States
+                                      </button>
+                                      <div class="dropdown-menu" id="StatesMenu">
+                                        <div class="row">
+                                          <input
+                                            type="checkbox"
+                                            name="AdminLocations"
+                                            class="ms-3"
+                                            id="422"
+                                            value="202021"
+                                          />
+                                          <label for="422" class="mx-3">102020</label>
+                                          <br />
                                         </div>
-                                        <div class="card-icon"><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></div>
-                                      </div>
-                                      <div class="shipping-address">
-                                        <h6>Filomena Green </h6><span>
-                                          Address: 2211 Fruitville Rd, Sarasota, Florida, US 34237</span><span>
-                                          Contact: (941) 321-5643</span>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xxl-4 col-sm-6"> 
-                                    <div class="card-wrapper border rounded-3 h-100 light-card">
-                                      <div class="collect-address">
-                                        <div class="d-flex gap-2 align-items-center">
-                                          <div class="form-check radio radio-primary">
-                                            <input class="form-check-input" id="shipping-choose2" type="radio" name="radio1" value="option1" checked="">
-                                            <label class="form-check-label mb-0" for="shipping-choose2">Work</label>
-                                          </div>
-                                        </div>
-                                        <div class="card-icon"><i class="fa fa-pencil"></i><i class="fa fa-trash-o"></i></div>
-                                      </div>
-                                      <div class="shipping-address">
-                                        <h6>Ms. Ila Runte DDS</h6><span>
-                                          Address: 1531 E 23rd St S, Independence, Mississippi, US 64055</span><span>
-                                          Contact: (816) 252-4500</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <h6 class="mt-4 mb-2">Shipping Method</h6>
-                                <div class="row shipping-method g-3">
-                                  <div class="col-sm-6">
-                                    <div class="card-wrapper border rounded-3 h-100 light-card">
-                                      <div class="form-check radio radio-primary">
-                                        <input class="form-check-input" id="shipping-choose3" type="radio" name="radio2" value="option1" checked="">
-                                        <label class="form-check-label mb-0" for="shipping-choose3">Standard Delivery - Free</label>
-                                      </div>
-                                      <p>Estimated 5-7 days shipping</p>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <div class="card-wrapper border rounded-3 h-100 light-card">
-                                      <div class="form-check radio radio-primary">
-                                        <input class="form-check-input" id="shipping-choose4" type="radio" name="radio2" value="option1" checked="">
-                                        <label class="form-check-label mb-0" for="shipping-choose4">Express Delivery - $24</label>
-                                      </div>
-                                      <p>Estimated 1-2 days shipping</p>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 text-end">
-                                    <button class="btn btn-primary">Proceed to Next<i class="fa fa-truck proceed-next pe-2"></i></button>
-                                  </div>
+  
                                 </div>
                               </div>
-                              <div class="tab-pane fade shipping-wizard" id="payment-wizard" role="tabpanel" aria-labelledby="payment-wizard-tab">
-                                <h6>Payment Information</h6>
-                                <p class="f-light">Fill up the following information to send you the order</p>
-                                <div class="payment-info-wrapper">
-                                  <div class="row shipping-method g-3">
-                                    <div class="col-12">
-                                      <div class="card-wrapper border rounded-3 light-card">
-                                        <div>
-                                          <div class="form-check radio radio-primary">
-                                            <input class="form-check-input" id="shipping-choose5" type="radio" name="radio3" value="option1" checked="">
-                                            <label class="form-check-label mb-0 f-w-500" for="shipping-choose5">Paypal</label>
-                                          </div>
-                                          <p>You will be taken to the paypal website to finish your transaction safely</p>
-                                        </div>
-                                        <div> <img src="assets/images/checkout/paypal.png" alt="paypal"></div>
-                                      </div>
-                                    </div>
-                                    <div class="col-12">
-                                      <div class="card-wrapper border rounded-3 pay-info light-card">
-                                        <div>
-                                          <div>
-                                            <div class="form-check radio radio-primary">
-                                              <input class="form-check-input" id="shipping-choose6" type="radio" name="radio3" value="option1">
-                                              <label class="form-check-label mb-0 f-w-500" for="shipping-choose6">Credit Card</label>
-                                            </div>
-                                            <p>Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</p>
-                                          </div>
-                                          <div> <img src="assets/images/forms/credit-card.png" alt="card"></div>
-                                        </div>
-                                        <form class="row g-3 needs-validation" novalidate="">
-                                          <div class="col-md-12"> 
-                                            <label class="form-label" for="placeholdername">Card Holder</label>
-                                            <input class="form-control" id="placeholdername" type="text" required="" placeholder="Enter card holder name">
-                                          </div>
-                                          <div class="col-md-4">
-                                            <label class="form-label" for="holdernumber">Card Number</label>
-                                            <input class="form-control" id="holdernumber" type="text" required="" placeholder="xxxx xxxx xxxx xxxx">
-                                            <div class="invalid-feedback">Please enter your valid number</div>
-                                            <div class="valid-feedback">
-                                               Looks's Good!</div>
-                                          </div>
-                                          <div class="col-md-4">
-                                            <label class="form-label" for="expirationdates">Expiration(MM/YY)</label>
-                                            <input class="form-control" id="expirationdates" type="number" required="" placeholder="xx/xx">
-                                            <div class="invalid-feedback">Please enter your valid number</div>
-                                            <div class="valid-feedback">
-                                               Looks's Good!</div>
-                                          </div>
-                                          <div class="col-md-4">
-                                            <label class="form-label" for="cvvNumber-c">CVV</label>
-                                            <input class="form-control" id="cvvNumber-c" type="text" required="">
-                                            <div class="invalid-feedback">Please enter your valid number</div>
-                                            <div class="valid-feedback">
-                                               Looks's Good!</div>
-                                          </div>
-                                          <div class="col-12"> 
-                                            <label class="form-label" for="formFile3">Upload Documentation</label>
-                                            <input class="form-control" id="formFile3" type="file" aria-label="file example" required="">
-                                            <div class="invalid-feedback">Invalid form file selected</div>
-                                          </div>
-                                          <div class="col-12">
-                                            <div class="form-check">
-                                              <input class="form-check-input" id="invalidCheck-c" type="checkbox" value="" required="">
-                                              <label class="form-check-label" for="invalidCheck-c">All the above information is correct</label>
-                                              <div class="invalid-feedback">You must agree before submitting.</div>
-                                            </div>
-                                          </div>
-                                        </form>
-                                      </div>
-                                    </div>
-                                    <div class="col-12">
-                                      <div class="card-wrapper border rounded-3 light-card">
-                                        <div>
-                                          <div class="form-check radio radio-primary">
-                                            <input class="form-check-input" id="shipping-choose7" type="radio" name="radio3" value="option1">
-                                            <label class="form-check-label mb-0 f-w-500" for="shipping-choose7">Cash On Delivery</label>
-                                          </div>
-                                          <p>After your order is delivered, make a cash payment</p>
-                                        </div>
-                                        <div> <img src="assets/images/forms/delivery.png" alt="delivery"></div>
-                                      </div>
-                                    </div>
-                                    <div class="col-12 text-end">
-                                      <button class="btn btn-primary">Proceed to Next<i class="fa fa-truck proceed-next pe-2"></i></button>
-                                    </div>
-                                  </div>
+                            
+                                <div class="col-sm-6">
+                                  <label class="form-label" for="customUserName">longitude</label>
+                                  <input class="form-control" id="customUserName" type="UserName"
+                                    placeholder="longitude" required="">
+                                  <div class="valid-feedback">Looks good!</div>
                                 </div>
-                              </div>
-                              <div class="tab-pane fade shipping-wizard finish-wizard1" id="finish-wizard" role="tabpanel" aria-labelledby="finish-wizard-tab">
-                                <div class="order-confirm"><img src="assets/images/gif/dashboard-8/successful.gif" alt="popper">
-                                  <h5>Thank you! Your order is confirmed.</h5>
-                                  <p class="mb-0">An email with your order's specifics will be sent to you as order confirmation.</p>
-                                  <p class="text-center f-w-500 mt-2">Order ID: <a class="text-decoration-underline" href="javascript:void(0)">GE34598 </a></p>
+                                <div class="col-sm-6">
+                                  <label class="form-label" for="customUserName">latitude</label>
+                                  <input class="form-control" id="customUserName" type="UserName"
+                                    placeholder="latitude" required="">
+                                  <div class="valid-feedback">Looks good!</div>
                                 </div>
+                              <div class="col-12">
+                                <label class="form-label" for="exampleFormControlTextarea1">Google Map Link </label>
+                                <input class="form-control" type="text" id="exampleFormControlTextarea1" rows="3" placeholder="Google Map Link ">
                               </div>
-                            </div>
+                              <div class="col-12">
+                                <label class="form-label" for="exampleFormControlTextarea1">Remarks </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <div class="col-12 text-center mt-3">
+                                <button class="btn btn-primary" type="submit">Save</button>
+                                <button class="btn btn-dark" type="reset">Cancel</button>
+                              </div>
+                            </form>
+                      
+                        </div>
                       </div>
                       <!-- Container-fluid Ends-->
                     </div>
@@ -763,6 +613,7 @@
               <!-- Zero Configuration  Ends-->
             </div>
           </div>
+        </div>
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->

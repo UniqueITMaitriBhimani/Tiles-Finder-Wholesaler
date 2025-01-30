@@ -402,7 +402,9 @@
                   <ul class="sidebar-submenu">
                     <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
                     <li><a href="mock-up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
-                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>  </ul>
+                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>
+                 
+                  </ul>
                 </li>
 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -414,6 +416,17 @@
 <li><a href="update-by-dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design by Dealer List</a></li>
                 </ul>
               </li>
+              <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                <span class="lan-10">Blog</span></a>
+              <ul class="sidebar-submenu">
+                <li><a href="add-blog.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add
+                    Blog</a></li>
+                <li><a href="blog-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Blog List</a>
+                </li>
+                <!-- <li><a href="team-member-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Team List</a></li> -->
+              </ul>
+            </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="inquiry-list.html">
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
@@ -424,6 +437,7 @@
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
                   <span class="lan-2">Stock</span></a>
                 </li>
+                
               
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
@@ -473,13 +487,17 @@
                       <div id="msform p-3">
                         <form class="stepper-one row needs-validation custom-input" novalidate="">
                           <div class="col-lg-4 col-md-12 col-sm-12">
-                            <label class="form-label" for="number">Design Name</label>
-                            <input class="form-control digits w-100" type="number" placeholder="Enter your Design Name" id="number">
+                            <label class="form-label" for="number">Design Number</label>
+                            <input class="form-control digits w-100" type="number" placeholder="Enter your Design Number" id="number">
                           </div>  
                           <div class="col-lg-4 col-md-12 col-sm-12">
-                            <label class="form-label" for="number">Size</label>
-                            <input class="form-control digits w-100" type="number" placeholder="Enter your Size" id="number">
-                          </div>    
+                            <label class="form-label" for="number">Pincode</label>
+                            <input class="form-control digits w-100" type="number" placeholder="Enter your Pincode" id="number">
+                          </div>
+                          <div class="col-lg-4 col-md-12 col-sm-12">
+                            <label class="form-label" for="number">Dealer Code</label>
+                            <input class="form-control digits w-100" type="number" placeholder="Enter your Dealer Code" id="number">
+                          </div>     
                           <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                             <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                             <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>

@@ -402,7 +402,9 @@
                   <ul class="sidebar-submenu">
                     <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
                     <li><a href="mock-up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
-                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>  </ul>
+                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>
+                 
+                  </ul>
                 </li>
 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -414,19 +416,28 @@
 <li><a href="update-by-dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design by Dealer List</a></li>
                 </ul>
               </li>
+              <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                <span class="lan-10">Blog</span></a>
+              <ul class="sidebar-submenu">
+                <li><a href="add-blog.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add
+                    Blog</a></li>
+                <li><a href="blog-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Blog List</a>
+                </li>
+                <!-- <li><a href="team-member-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Team List</a></li> -->
+              </ul>
+            </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="inquiry-list.html">
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
                   <span class="lan-2">Inquiry</span></a>
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-users text-white" aria-hidden="true"></i>
-                  <span class="lan-8">Stock</span></a>
-                  <ul class="sidebar-submenu">
-                    <li><a href="stock-list.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Stock List</a></li>
-                    <li><a href="srock-update.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Stock Update</a></li>
-                  </ul>
-              </li>
+<li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link" href="stock-list.html">
+                  <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
+                  <span class="lan-2">Stock</span></a>
+                </li>
+                
               
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
             </div>
@@ -467,32 +478,9 @@
                         </ul>
                         <div class="tab-content mt-3" id="myTabContent">
                             <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <div class="col-sm-12">
-                                <label class="form-label" for="customState-wizard">Manufacturer </label>
-                                <select class="form-select" id="customState-wizard" required="">
-                                  <option selected="" disabled="" value="">Select Manufacturer Name </option>
-                                  <option>Simpolo </option>
-                                  <option>Spensera</option>
-                                </select>
-                              </div>
-                              <div class="col-sm-12">
-                                <label class="form-label" for="customState-wizard">Brand </label>
-                                <select class="form-select" id="customState-wizard" required="">
-                                  <option selected="" disabled="" value="">Select Brand Name </option>
-                                  <option>Diccasa </option>
-                                  <option>Slove</option>
-                                </select>
-                              </div>
-                                <div class="col-sm-12">
-                                    <label class="form-label" for="customState-wizard">Design Name </label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select Design Name </option>
-                                      <option>Snow White </option>
-                                      <option>Black Plain</option>
-                                      <option>White PLain </option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid state.</div>
-                                    
+                              
+                            
+                             
                             <div class="col-sm-12 mt-3">
                                 <label class="form-label" for="customBoxes">Boxes<span class="txt-danger">*</span></label>
                                 <input class="form-control" id="customBoxes" type="text" placeholder=" Boxes" required="">
@@ -501,34 +489,11 @@
                               <div class="col-12 text-center mt-3">
                                 <button class="btn btn-primary" type="submit">Add</button>
                               </div>
-                                  </div>
                             </div>
                             <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tabs">
-                              <div class="col-sm-12">
-                                <label class="form-label" for="customState-wizard">Manufacturer </label>
-                                <select class="form-select" id="customState-wizard" required="">
-                                  <option selected="" disabled="" value="">Select Manufacturer Name </option>
-                                  <option>Simpolo </option>
-                                  <option>Spensera</option>
-                                </select>
-                              </div>
-                              <div class="col-sm-12">
-                                <label class="form-label" for="customState-wizard">Brand </label>
-                                <select class="form-select" id="customState-wizard" required="">
-                                  <option selected="" disabled="" value="">Select Brand Name </option>
-                                  <option>Diccasa </option>
-                                  <option>Slove</option>
-                                </select>
-                              </div>
-                                <div class="col-sm-12">
-                                    <label class="form-label" for="customState-wizard">Design name </label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select Design Name </option>
-                                      <option>Snow White </option>
-                                      <option>Black Plain</option>
-                                      <option>White PLain </option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a valid state.</div>
+                             
+                              
+                                  
                                     
                             <div class="col-sm-12 mt-3">
                                 <label class="form-label" for="customBoxes">Boxes<span class="txt-danger">*</span></label>
@@ -538,7 +503,6 @@
                               <div class="col-12 text-center mt-3">
                                 <button class="btn btn-primary" type="submit">Add</button>
                               </div>
-                                  </div>
                             </div>
                         </div>
                     </div>

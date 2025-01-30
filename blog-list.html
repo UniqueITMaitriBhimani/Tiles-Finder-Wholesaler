@@ -81,7 +81,7 @@
           </div>
           <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
             <ul class="nav-menus"> 
-           
+            
               <li class="profile-nav onhover-dropdown"> 
                 <div class="media profile-media"><img class="b-r-10" src="assets/images/dashboard/profile.png" alt="">
                   <div class="media-body d-xxl-block d-none box-col-none">
@@ -205,7 +205,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Mockup List</h4>
+                  <h4>Blog List</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
@@ -213,8 +213,8 @@
                         <svg class="stroke-icon">
                           <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Mockup</li>
-                    <li class="breadcrumb-item active">Mockup List</li>
+                    <li class="breadcrumb-item">Blog</li>
+                    <li class="breadcrumb-item active">Blog List</li>
                   </ol>
                 </div>
               </div>
@@ -249,20 +249,12 @@
                           </div>
                           <div class="col-lg-4 col-md-12 col-sm-12">
                             <label class="form-label" for="DesignName">Design Name</label>
-                            <select class="form-select" id="customState-wizard" required="">
-                              <option selected="" disabled="" value="">Select Design </option>
-                              <option>Snow White</option>
-                              <option>Black plain</option>
-                            </select>
-                          </div> 
+                            <input class="form-control digits w-100" type="text" placeholder="Enter your Design Name" id="DesignName">
+                          </div>  
                           <div class="col-lg-4 col-md-12 col-sm-12">
-                            <label class="form-label" for="DesignName">Area</label>
-                            <select class="form-select" id="customState-wizard" required="">
-                              <option selected="" disabled="" value="">Select Area </option>
-                              <option>Bathroom</option>
-                              <option>Parking</option>
-                            </select>
-                          </div>      
+                            <label class="form-label" for="DesignName">Blog Title</label>
+                            <input class="form-control digits w-100" type="text" placeholder="Enter your Blog Title" id="DesignName">
+                          </div>    
                           <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                             <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                             <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
@@ -286,24 +278,20 @@
                                   <thead>
                                     <tr class="bg-light text-dark">
                                       <th class="text-center">No.</th>
-                                      <th class="text-center">Mockup Name</th>
-                                      <th class="text-center">Image</th>
-                                      <th class="text-center">Total Designs</th>
-                                      <th class="text-center">Areas</th>  
+                                      <th class="text-center">Title</th>
+                                      <th class="text-center">Short Description</th> 
+                                      <th class="text-center">Sequence</th> 
                                       <th class="text-center">Action</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
                                       <td class="text-center table-data">1</td>
-                                      <td class="text-center table-data">Mockup 1</td>
-                                      <td class="text-center table-data"><img src="assets/images/demo img.avif" width="70px" height="70px" alt=""></td>
+                                      <td class="text-center table-data">abci</td>
+                                      <td class="text-center table-data">abc</td>
                                       <td class="text-center table-data">6</td>
-                                      <td class="text-center table-data"> <span class="badge rounded-pill badge-secondary p-1">Bathroom</span> <span class="badge rounded-pill badge-secondary p-1">Parking</span></td>
-
-                                      <td class="text-center col-fix table-data"> 
-                                        <ul class="action d-flex justify-content-center"> 
-                                          <li class="edit"> <a href="add-blog.html" class="bg-primary p-2 rounded"><i class="fa fa-plus-square text-white" aria-hidden="true"></i></a></li>
+                                      <td class="d-flex justify-content-center"> 
+                                        <ul class="action"> 
                                           <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                           <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                                         </ul>
@@ -311,20 +299,17 @@
                                     </tr>
                                     <tr>
                                       <td class="text-center table-data">2</td>
-                                      <td class="text-center table-data">Bathroom Mockup</td>
-                                      <td class="text-center table-data"><img src="assets/images/demo 2.jpg" width="70px" height="70px" alt=""></td>
+                                      <td class="text-center table-data">abci</td>
+                                      <td class="text-center table-data">abc</td>
                                       <td class="text-center table-data">6</td>
-                                      <td class="text-center table-data"> <span class="badge rounded-pill badge-secondary p-1">Bathroom</span> <span class="badge rounded-pill badge-secondary p-1">Parking</span></td>
-
-                                      <td class="text-center col-fix table-data"> 
-                                        <ul class="action d-flex justify-content-center"> 
-                                          <li class="edit"> <a href="add-blog.html" class="bg-primary p-2 rounded"><i class="fa fa-plus-square text-white" aria-hidden="true"></i></a></li>
+                                      <td class="d-flex justify-content-center"> 
+                                        <ul class="action"> 
                                           <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                           <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                                         </ul>
                                       </td>
                                     </tr>
-                                   
+                                  
                                     </tr>
                                   </tbody>
                                 </table>
@@ -375,6 +360,7 @@
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
+   
     <script src="assets/js/filter.js"></script>
   </body>
 </html>
