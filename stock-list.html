@@ -466,6 +466,65 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row">
+              <!-- Filter Button Start -->
+              <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3">
+                <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="tooltip" title="btn btn-success btn-lg" id="filter-button">
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="filter" >
+                      <polygon fill="none" stroke="white" stroke-miterlimit="10" stroke-width="4" points="2 6 2 10 26 34 26 58 38 58 38 34 62 10 62 6 2 6"></polygon>
+                    </svg>
+                  </div>
+                  <div class="text-white" id="text"><span>Filter</span></div>
+                </button>
+              </div>
+               <!-- Filter Button End -->
+            </div>
+            <div class="row mb-2" id="filter-form">
+              <!-- Filter Form Start -->
+              <div class="col-sm-12">
+                <div class="card height-equal">
+                  <div class="card-body basic-wizard important-validation">
+                    <div id="msform p-3">
+                      <form class="stepper-one row needs-validation custom-input" novalidate="">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <label class="form-label" for="DesignName">Company Name</label>
+                          <input class="form-control digits w-100" type="text" placeholder="Enter Company Name" id="DesignName">
+                        </div>  
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <label class="form-label" for="customState-wizard">Size</label>
+                                      <select class="form-select" id="customState-wizard" required="">
+                                        <option selected="" disabled="" value="">Select Size</option>
+                                        <option>312*312 mm </option>
+                                        <option>200*800 mm</option>
+                                        <option>800*1200 mm </option>
+                                        <option>195*1200 mm</option>
+                                      </select>
+                                      <div class="invalid-feedback">Please select a valid state.</div>
+                          </div>  
+                          <div class="col-lg-4 col-md-12 col-sm-12">
+                            <label class="form-label" for="customState-wizard">Brand</label>
+                                      <select class="form-select" id="customState-wizard" required="">
+                                        <option selected="" disabled="" value="">Select Brand</option>
+                                        <option>Simpolo </option>
+                                        <option>Spencera</option>
+                                        <option>Famous </option>
+                                    
+                                      </select>
+                                      <div class="invalid-feedback">Please select a valid state.</div>
+                          </div>  
+                       
+                        <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
+                          <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
+                          <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter Form end -->
+            </div>
+            <div class="row">
               <!-- Zero Configuration  Starts-->
               <div class="col-sm-12">
                 <div class="card">
@@ -478,27 +537,220 @@
                               <th scope="col" class="text-center">No</th>
                               <th scope="col" class="text-center">Design Name<i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
                               <th scope="col" class="text-center">Boxes <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
+                              <th scope="col" class="text-center">Pieces <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
+                              
                               <th scope="col" class="text-center">Brand <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
                              
+
                               <th scope="col" class="text-center">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <th scope="row" class="text-center table-data">1</th>
-                              <td class="text-center table-data">Snow White</td>
-                              <td class="text-center table-data">20</td>
-                              <td class="text-center table-data">Spencera</td>
+                              <td class="text-center table-data"> White</td>
+                              <td class="text-center table-data">25</td>
+                              <td class="text-center table-data">0</td>
 
-                              <td class="text-center col-fix table-data"> 
-                                <ul class="action d-flex justify-content-center"> 
-                                  <li class="edit"> <a href="srock-update.html" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
+                              <td class="text-center table-data">Simpolo</td>
+
+                              <td class="d-flex justify-content-center"> 
+                                <ul class="action"> 
+                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxInModal"><i class="fa fa-sign-in text-white" aria-hidden="true"></i></a></li>
+                                  <li class="delete"><a href="#" class="bg-success p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxOutModal"><i class="fa fa-sign-out text-white" aria-hidden="true"></i></a></li>
                                 </ul>
                               </td>
+                            
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-center table-data">2</th>
+                              <td class="text-center table-data">Brown</td>
+                              <td class="text-center table-data">22</td>
+                              <td class="text-center table-data">5</td>
+
+                              <td class="text-center table-data">Famous</td>
+
+                              <td class="d-flex justify-content-center"> 
+                                <ul class="action"> 
+                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxInModal"><i class="fa fa-sign-in text-white" aria-hidden="true"></i></a></li>
+                                  <li class="delete"><a href="#" class="bg-success p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxOutModal"><i class="fa fa-sign-out text-white" aria-hidden="true"></i></a></li>
+                                </ul>
+                              </td>
+                            
+                            
                             </tr>
                           
+                            <tr>
+                              <th scope="row" class="text-center table-data">4</th>
+                              <td class="text-center table-data">Plain Black</td>
+                              <td class="text-center table-data">10</td>
+                              <td class="text-center table-data">2</td>
+
+                              <td class="text-center table-data">Spencera</td>
+
+                              <td class="d-flex justify-content-center"> 
+                                <ul class="action"> 
+                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxInModal"><i class="fa fa-sign-in text-white" aria-hidden="true"></i></a></li>
+                                  <li class="delete"><a href="#" class="bg-success p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxOutModal"><i class="fa fa-sign-out text-white" aria-hidden="true"></i></a></li>
+                                </ul>
+                              </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-center table-data">5</th>
+                              <td class="text-center table-data">Snow White</td>
+                              <td class="text-center table-data">20</td>
+                              <td class="text-center table-data">5</td>
+
+                              <td class="text-center table-data">Recore</td>
+
+                              <!-- <td class="text-center col-fix table-data " style="border-color: #eeeeee;">
+                                <ul class="action d-flex justify-content-center">
+                                    <li class="dropdown">
+                                      <button class="btn border border-1 p-2 rounded-2 d-flex align-items-center justify-content-center"
+                                      type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 36px;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                       class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                  </svg>
+                              </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#boxInModal">Box In</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#boxOutModal">Box Out</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#boxToPieceModal">Box to Piece</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#pieceOutModal">Piece Out</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                            </td> -->
+                            <td class="d-flex justify-content-center"> 
+                              <ul class="action"> 
+                                <li class="delete"><a href="#" class="bg-danger p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxInModal"><i class="fa fa-sign-in text-white" aria-hidden="true"></i></a></li>
+                                <li class="delete"><a href="#" class="bg-success p-2 rounded" data-bs-toggle="modal" data-bs-target="#boxOutModal"><i class="fa fa-sign-out text-white" aria-hidden="true"></i></a></li>
+                              </ul>
+                            </td>
+                        
+                            </tr>
                           </tbody>
                         </table>
+                        <div class="modal fade" id="boxInModal" tabindex="-1" aria-labelledby="boxInModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="boxInModalLabel">Box In</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <!-- Your form or content for Box In -->
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tabs">
+                                        <div class="col-sm-12 ">
+                                            <label class="form-label" for="customBoxes">Boxes<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="customBoxes" type="text" placeholder=" Boxes" required="">
+                                            <div class="valid-feedback">Looks good!</div>
+                                          </div>
+                                         
+                                          <div class="col-sm-12 ">
+                                            <label class="form-label" for="customBoxes">Pieces<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="customBoxes" type="text" placeholder=" Boxes" required="">
+                                            <div class="valid-feedback">Looks good!</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-primary text-center" type="submit">Add</button>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>                            
+                      <div class="modal fade" id="boxOutModal" tabindex="-1" aria-labelledby="boxOutModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="boxOutModalLabel">Box Out</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tabs">
+                                    <div class="col-sm-12 ">
+                                        <label class="form-label" for="customBoxes">Boxes<span class="txt-danger">*</span></label>
+                                        <input class="form-control" id="customBoxes" type="text" placeholder=" Boxes" required="">
+                                        <div class="valid-feedback">Looks good!</div>
+                                      </div>
+                                      <div class="col-sm-12 ">
+                                        <label class="form-label" for="customBoxes">Pieces<span class="txt-danger">*</span></label>
+                                        <input class="form-control" id="customBoxes" type="text" placeholder=" Boxes" required="">
+                                        <div class="valid-feedback">Looks good!</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary text-center" type="submit">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal for Box to Piece -->
+                    <div class="modal fade" id="boxToPieceModal" tabindex="-1" aria-labelledby="boxToPieceModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="boxToPieceModalLabel">Box to Piece</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tabs">
+                                    <div class="col-sm-12 ">
+                                        <label class="form-label" for="customBoxes">How many boxes to convert into pieces?<span class="txt-danger">*</span></label>
+                                        <input class="form-control" id="customBoxes" type="text" placeholder=" Boxes" required="">
+                                        <div class="valid-feedback">Looks good!</div>
+                                      </div>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary text-center" type="submit">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal for Piece Out -->
+                    <div class="modal fade" id="pieceOutModal" tabindex="-1" aria-labelledby="pieceOutModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="pieceOutModalLabel">Piece Out</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tabs">
+                                    <div class="col-sm-12 ">
+                                        <label class="form-label" for="customBoxes">Pieces<span class="txt-danger">*</span></label>
+                                        <input class="form-control" id="customBoxes" type="text" placeholder=" Pieces" required="">
+                                        <div class="valid-feedback">Looks good!</div>
+                                      </div>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary text-center" type="submit">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
                       </div>
                       <div class="row justify-content-between gx-0 mx-2">
                         <div class="col-lg-4 col-md-4 col-sm-12">
