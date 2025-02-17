@@ -321,7 +321,7 @@ function copyLink() {
                                 <form class="row g-3 needs-validation" novalidate="">
                               
                                 
-                                  <div class="col-sm-6">
+                                  <div class="col-sm-12">
                                     <label class="form-label" for="customName">Design Name<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customName" type="text" placeholder="Name" required="">
                                     <div class="valid-feedback">Looks good!</div>
@@ -329,6 +329,11 @@ function copyLink() {
                                   <div class="col-sm-6">
                                     <label class="form-label" for="customUrl">Design URL<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customUrl" type="URL" placeholder=" URL" required="">
+                                    <div class="valid-feedback">Looks good!</div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <label class="form-label" for="customUrl">Sequence</label>
+                                    <input class="form-control" id="customUrl" type="URL" placeholder="Sequence" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-sm-6">
@@ -623,12 +628,17 @@ function copyLink() {
                                             <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
                                             <div class="invalid-feedback">Invalid form file selected</div>
                                           </div>
-                                          <div class="col-sm-4">
+                                          <div class="col-sm-3">
                                             <label class="form-label" for="customSequence">Sequence<span class="txt-danger">*</span></label>
                                             <input class="form-control" id="customSequence" type="Sequence" placeholder=" Sequence" required="">
                                             <div class="valid-feedback">Looks good!</div>
                                           </div>
-                                          <div class="col-sm-4">
+                                          <div class="col-sm-3">
+                                            <label class="form-label" for="customSequence">Alt Tag<span class="txt-danger">*</span></label>
+                                            <input class="form-control" id="customSequence" type="Sequence" placeholder=" Alt Tag" required="">
+                                            <div class="valid-feedback">Looks good!</div>
+                                          </div>
+                                          <div class="col-sm-2">
                                             <div class="d-flex justify-content-end align-items-center mt-4">
                                                 <div class="btn-showcase text-start"> <a href="finish-add.html">
                                                     <button class="btn btn-pill btn-outline-danger-2x b-r-8" type="button">Add</button></a></div>

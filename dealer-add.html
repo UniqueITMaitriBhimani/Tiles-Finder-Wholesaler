@@ -478,10 +478,16 @@
                             aria-labelledby="bill-wizard-tab">
                             <form class="row g-3 needs-validation" novalidate="">
                             
-                              <div class="col-sm-12">
+                              <div class="col-sm-6">
                                 <label class="form-label" for="customDealerCode"> Dealer Code<span
                                     class="txt-danger">*</span></label>
                                 <input class="form-control" id="customDealerCode" type="text" placeholder="Dealer Code"
+                                  required="">
+                                <div class="valid-feedback">Looks good!</div>
+                              </div>
+                              <div class="col-sm-6">
+                                <label class="form-label" for="customDealerCode">Sequence</label>
+                                <input class="form-control" id="customDealerCode" type="text" placeholder="Sequence"
                                   required="">
                                 <div class="valid-feedback">Looks good!</div>
                               </div>
@@ -492,6 +498,7 @@
                                   placeholder=" UserName / Email" required="">
                                 <div class="valid-feedback">Looks good!</div>
                               </div>
+                              
                               <div class="col-sm-6">
                                 <label class="form-label" for="customUserName">Password<span
                                     class="txt-danger">*</span></label>
