@@ -66,9 +66,9 @@
                 <div class="Typeahead-menu"> </div>
               </div>
             </div>
-          </form>
+          </form> 
           <div class="header-logo-wrapper col-auto p-0">  
-            <div class="logo-wrapper"> <a href="index.html"><img class="img-fluid for-light" src="assets/images/logo/logo_dark.png" alt="logo-light"><img class="img-fluid for-dark" src="assets/images/logo/logo.png" alt="logo-dark"></a></div>
+            <div class="logo-wrapper"> <a href="index.html"><img class="img-fluid for-light" src="assets/images/logo/Unique_it.jpg" alt="logo-light"><img class="img-fluid for-dark" src="assets/images/logo/Unique_it.jpg" alt="logo-dark"></a></div>
             <div class="toggle-sidebar"> <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
           </div>
           <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
@@ -77,109 +77,18 @@
                 <h4 class="f-w-600">Welcome Vipul Bhai</h4><img class="mt-0" src="assets/images/hand.gif" alt="hand-gif">
               </div>
             </div>
-            <div class="welcome-content d-xl-block d-none"><span class="text-truncate col-12"> </span></div>
           </div>
           <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
             <ul class="nav-menus"> 
-              <li class="onhover-dropdown">
-                <div class="globe-icon"><i class="globe" data-feather="globe"></i></div>
-                <div class="onhover-show-div bookmark-flip">
-                  <div class="flip-card" >
-                    <div class="flip-card-inner">
-                      <div class="front" style="height: auto;">
-                        <h6 class="f-18 mb-0 dropdown-title">Copy Link</h6>
-                        <ul class="bookmark-dropdown">
-                          <li class="text-center">
-                            <input type="text" id="copyLinkInput" value="https://example.com" readonly>
-                            <button class="flip-btn f-w-700" onclick="copyLink()">Copy</button>
-                            <span id="copyMessage" class="copy-message">Copied!</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              
-<style>
- .onhover-show-div {
-  display: none;
-  position: absolute;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  z-index: 100;
-}
-
-.onhover-dropdown:hover .onhover-show-div {
-  display: block;
-}
-
-.flip-card {
-  width: 200px;
-  height: auto;
-}
-
-#copyLinkInput {
-  width: 100%;
-  border: none;
-  background: transparent;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.flip-btn {
-  background: #0487ff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.copy-message {
-  display: none;
-  color: #28a745;
-  margin-left: 10px;
-  font-size: 14px;
-}
-
-</style>     
-<script>
-function copyLink() {
-  var copyText = document.getElementById("copyLinkInput");
-  
-  // Copy the text without selecting it
-  navigator.clipboard.writeText(copyText.value)
-    .then(() => {
-      // Show the copied message
-      var message = document.getElementById("copyMessage");
-      message.style.display = "inline";
-      
-      // Hide the message after 2 seconds
-      setTimeout(function() {
-        message.style.display = "none";
-      }, 2000);
-    })
-    .catch(err => {
-      console.error('Failed to copy: ', err);
-    });
-}
-
-
-</script>         
               <li class="profile-nav onhover-dropdown"> 
                 <div class="media profile-media"><img class="b-r-10" src="assets/images/dashboard/profile.png" alt="">
                   <div class="media-body d-xxl-block d-none box-col-none">
-                    <div class="d-flex align-items-center gap-2"> <span>Vipul Bhai Mora </span><i class="middle fa fa-angle-down"> </i></div>
+                    <div class="d-flex align-items-center gap-2"> <span>Vipul Bhai </span><i class="middle fa fa-angle-down"> </i></div>
                     <p class="mb-0 font-roboto">Admin</p>
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
-                  <li><a href="user-profile.html"><i data-feather="user"></i><span>My Profile</span></a></li>
-                  <li><a href="letter-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
-                  <li> <a href="edit-profile.html"> <i data-feather="settings"></i><span>Settings</span></a></li>
+                  <li><a href="http://"><span>Master Admin</span></a></li>
                   <li><a class="btn btn-pill btn-outline-primary btn-sm" href="login.html">Log Out</a></li>
                 </ul>
               </li>
@@ -201,7 +110,7 @@ function copyLink() {
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-layout="stroke-svg">
-          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid w-75" src="/assets/images/logo/logo-unique_it.webp" alt=""></a>
+          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid w-75" src="assets/images/logo/logo-unique_it.webp" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
           </div>
@@ -210,7 +119,7 @@ function copyLink() {
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
               <ul class="sidebar-links" id="simple-bar">
-                <li class="back-btn"><a href="index.html"><img class="img-fluid" src="/assets/images/logo/logo-icon.png" alt=""></a>
+                <li class="back-btn"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a>
                   <div class="mobile-back text-end"> <span>Back </span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                 </li>
                 <li class="pin-title sidebar-main-title">
@@ -259,7 +168,7 @@ function copyLink() {
 <li><a href="update-by-dealer-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Design by Dealer List</a></li>
                 </ul>
               </li>
-              <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+              <!-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                 <i class="fa fa-file-text text-white" aria-hidden="true"></i>
                 <span class="lan-10">Blog</span></a>
               <ul class="sidebar-submenu">
@@ -267,9 +176,8 @@ function copyLink() {
                     Blog</a></li>
                 <li><a href="blog-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Blog List</a>
                 </li>
-                <!-- <li><a href="team-member-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Team List</a></li> -->
               </ul>
-            </li>
+            </li> -->
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link" href="inquiry-list.html">
                   <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
@@ -375,8 +283,7 @@ function copyLink() {
                                     <div class="invalid-feedback">Please select a valid state.</div>
                                   </div>
                                   <div class="col-sm-6">
-                                    <label class="form-label" for="customState-wizard">Brand<span
-                                      class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customState-wizard">Brand</label>
                                     <select class="form-select" id="customState-wizard" required="">
                                       <option selected="" disabled="" value="">Select Brand</option>
                                       <option>Simpolo </option>
