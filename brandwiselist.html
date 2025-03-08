@@ -154,9 +154,13 @@
                   <ul class="sidebar-submenu">
                     <li><a href="mock-up-add.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Mock Up</a></li>
                     <li><a href="mock-up-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Mock Up List</a></li>
-                    <li><a href="Loginofmanufacturer.html"><i class="fa fa-list text-white" aria-hidden="true"></i> select MockUps</a></li>
-                 
+                    
                   </ul>
+                </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link" href="Loginofmanufacturer.html">
+                  <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
+                  <span class="lan-2">select Design</span></a>
                 </li>
 
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -220,6 +224,9 @@
                             <tr class="bg-light">
                               <th scope="col" class="text-center">Image</th>
                               <th scope="col" class="text-center">Design Name</th>
+                              <th class="text-center">Size</th>    
+                              <th class="text-center">Finish</th>    
+                              <th class="text-center">Category</th>    
                               <th scope="col" class="text-center">Action</th>
                             </tr>
                           </thead>
@@ -227,6 +234,9 @@
                             <tr>
                               <th scope="row" class="text-center table-data"><img src="assets/images/demo 2.jpg" width="50px" height="50px" alt=""></th>
                               <td class="text-center table-data">Spencera</td>
+                              <td class="text-center table-data">16 * 18</td>
+                              <td class="text-center table-data">963258</td>
+                              <td class="text-center table-data">Ceramic</td>
                               <td class="text-center col-fix table-data"> 
                                 <ul class="action d-flex justify-content-center"> 
                                   <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
@@ -287,7 +297,7 @@
               <div class="page-title" style="padding: 20px 46px;">
                 <div class="row">
                   <div class="col-12 col-md-10">
-                    <h4>New Designs</h4>
+                    <h4>Given Designs</h4>
                   </div>
                   <div class="col-12 col-md-2 d-flex justify-content-md-end align-items-center">
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#brandModal">Add</button>
@@ -313,6 +323,8 @@
                                       </select>
                                   </div>
                                   <button type="submit" class="btn btn-success">Submit</button>
+                                  <button type="submit" class="btn btn-primary">Without Any Brand</button>
+
                               </form>
                           </div>
                       </div>
@@ -346,6 +358,9 @@
                               <th scope="col" class="text-center"><input class="form-check-input border-info" id="flexCheckDefault" type="checkbox" value=""></th>
                               <th scope="col" class="text-center">Image</th>
                               <th scope="col" class="text-center">Design Name</th>
+                              <th class="text-center">Size</th>    
+                              <th class="text-center">Finish</th>    
+                              <th class="text-center">Category</th>    
                             </tr>
                           </thead>
                           <tbody>
@@ -353,11 +368,17 @@
                               <td class="text-center table-data"><input class="form-check-input border-info" id="flexCheckDefault" type="checkbox" value=""></td>
                               <th scope="row" class="text-center table-data"><img src="assets/images/demo 2.jpg" width="50px" height="50px" alt=""></th>
                               <td class="text-center col-fix table-data">xys</td>
+                              <td class="text-center table-data">16 * 18</td>
+                              <td class="text-center table-data">963258</td>
+                              <td class="text-center table-data">Ceramic</td>
                             </tr>
                             <tr>
                               <td class="text-center table-data"><input class="form-check-input border-info" id="flexCheckDefault" type="checkbox" value=""></td>
                               <th scope="row" class="text-center table-data"><img src="assets/images/demo 2.jpg" width="50px" height="50px" alt=""></th>
                               <td class="text-center col-fix table-data">xys</td>
+                              <td class="text-center table-data">16 * 18</td>
+                              <td class="text-center table-data">963258</td>
+                              <td class="text-center table-data">Ceramic</td>
                             </tr>
                           </tbody>
                         </table>
